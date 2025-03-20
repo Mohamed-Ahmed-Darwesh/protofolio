@@ -1,7 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { AfterViewInit, Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { ButtonModule } from 'primeng/button';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
 
 @Component({
   selector: 'app-root',
@@ -9,13 +12,9 @@ import { ButtonModule } from 'primeng/button';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  private readonly s = inject(ToastrService)
-  clcick(){
-        this.s.success("asfa")
-  }
-  ngOnInit(): void {
+export class AppComponent{
+  private readonly ToastrService = inject(ToastrService)
 
-  }
-  title = 'protofolio';
+
+  title = 'Protofolio';
 }
