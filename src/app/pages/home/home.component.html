@@ -1,30 +1,167 @@
-<section class="pt-14 lg:pt-16 mx-16 min-h-screen grid grid-cols-3">
-    <div class="col-span-1 flex flex-col justify-between h-screen fixed">
-        <div>
-            <h1 class="capitalize text-3xl lg:text-4xl font-bold mb-3">
-                mohamed ahmed
-            </h1>
-            <h2 class="capitalize font-medium text-base lg:text-xl">
-                junior front-end developer
-            </h2>
+<section id="about" class="pt-14 lg:pt-16 mx-16  grid grid-cols-3 gap-16 lg:gap-8 ">
+  <div class="col-span-1 h-screen tracking-wide">
+    <div class="fixed flex flex-col justify-between h-full">
+      <div>
+        <h1 class="capitalize text-3xl lg:text-4xl 2xl:text-5xl font-bold mb-3 opacity-90">
+          mohamed ahmed
+        </h1>
+        <h2 class="capitalize font-medium text-base lg:text-xl 2xl:text-2xl">
+          junior front-end developer
+        </h2>
+      </div>
+      <div class="uppercase font-medium lg:font-semibold flex flex-col tracking-wider">
+        <div
+        [routerLink]="[]" fragment="about"
+          class=" cursor-pointer relative ms-7 p-3 lg:p-5 navigate-box navigate opacity-60 focus:opacity-90 hover:opacity-90 transition-all duration-300 ease-in-out"
+        >
+          <a
+              
+            class="text-[11px] lg:text-base 2xl:text-xl relative navigate-txt"
+            >about</a
+          >
         </div>
-        <div class=" uppercase font-semibold  flex flex-col">
-            <div class=" relative ms-7 p-3 lg:p-5 navigate-box navigate opacity-60 focus:opacity-90 hover:opacity-90 transition-all duration-300 ease-in-out">
-                <a href="#about" class=" text-[11px] lg:text-base relative  navigate-txt">about</a>
-            </div>
-            <div class=" relative ms-7 p-3 lg:p-5 navigate-box navigate opacity-60 focus:opacity-90 hover:opacity-100 transition-all duration-300 ease-in-out">
-                <a href="#skills" class=" text-[11px] lg:text-base relative  navigate-txt">skills</a>
-            </div>
-            <div class=" relative ms-7 p-3 lg:p-5 navigate-box navigate opacity-60 focus:opacity-90 hover:opacity-100 transition-all duration-300 ease-in-out">
-                <a href="#projects" class=" text-[11px] lg:text-base relative  navigate-txt">projects</a>
-            </div>      
+        <div
+        [routerLink]="[]" fragment="tools"
+          class="cursor-pointer relative ms-7 p-3 lg:p-5 navigate-box navigate opacity-60 focus:opacity-90 hover:opacity-100 transition-all duration-300 ease-in-out"
+        >
+          <a
+            class="text-[11px] lg:text-base 2xl:text-xl relative navigate-txt"
+            >tools</a
+          >
         </div>
-        <div class="flex gap-7 mb-16">
-            <a href="https://github.com/caydende" class="lg:text-3xl opacity-60 hover:opacity-100 rounded-full transition-all duration-300 ease-in-out"><i class="fa-brands fa-github "></i></a>
-            <a href="" class="lg:text-3xl opacity-60 hover:opacity-100 rounded-full transition-all duration-300 ease-in-out"><i class="fa-solid fa-envelope"></i></a>
-            <a href="" class="lg:text-3xl opacity-60 hover:opacity-100 rounded-full transition-all duration-300 ease-in-out"><i class="fa-brands fa-linkedin-in"></i></a>
+        <div
+        [routerLink]="[]" fragment="projects"
+          class="cursor-pointer relative ms-7 p-3 lg:p-5 navigate-box navigate opacity-60 focus:opacity-90 hover:opacity-100 transition-all duration-300 ease-in-out"
+        >
+          <a
+            href="#projects"
+            class="text-[11px] lg:text-base 2xl:text-xl relative navigate-txt"
+            >projects</a
+          >
         </div>
-        <span> </span>
+      </div>
+      <div class="flex gap-7 2xl:gap-12 mb-16">
+        <a
+          href="https://github.com/caydende"
+          class="lg:text-3xl 2xl:text-5xl opacity-60 hover:opacity-100 rounded-full transition-all duration-300 ease-in-out"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href=""
+          class="lg:text-3xl 2xl:text-5xl opacity-60 hover:opacity-100 rounded-full transition-all duration-300 ease-in-out"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a
+          href=""
+          class="lg:text-3xl 2xl:text-5xl  opacity-60 hover:opacity-100 rounded-full transition-all duration-300 ease-in-out"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+      </div>
+      <span> </span>
     </div>
-    <div class="col-span-2 min-h-[1200vh]"></div>
+  </div>
+  <div class="col-span-2 min-h-[1200vh]">
+    <div id="about" class="text-base leading-9 lg:text-lg 2xl:text-xl 2xl:leading-12 font-thin flex flex-col gap-8 ">
+      <p>
+        I'm a
+        <span class="capitalize font-bold">junior front-end developer</span>
+        with experience in <span class="font-medium lg:font-semibold">Angular</span>,
+        <span class="font-medium lg:font-semibold">TypeScript</span>, and UI frameworks like
+        <span class="font-medium lg:font-semibold">Tailwind CSS</span>, and
+        <span class="font-medium lg:font-semibold">Bootstrap</span>,
+        I have also worked with UI libraries like
+        <span class="font-medium lg:font-semibold">PrimeNG</span>, and
+        <span class="font-medium lg:font-semibold">Flowbite</span>. I have built a full
+        <a
+            class="font-semibold lg:font-bold text-lg lg:text-xl 2xl:text-2xl p-2 text-amber-700 hover:text-amber-600 hover: transition-all duration-500 ease-in-out "
+            href="https://ecommerce-three-umber.vercel.app/login"
+            target="_blank"
+            ><span>"Ecommerce"</span></a>
+        web application and several static landing pages, using
+        <span  class="font-medium lg:font-semibold">GSAP</span > for animations and <span  class="font-medium lg:font-semibold">jQuery</span> for interactive
+        elements. I write structured, maintainable code with
+        <span  class="font-medium lg:font-semibold">ECMAScript 6</span>, <span  class="font-medium lg:font-semibold">HTML5</span>, and <span  class="font-medium lg:font-semibold">CSS3</span>,
+        and use <span  class="font-medium lg:font-semibold">GitHub</span> for version control.
+      </p>
+
+      <p>
+        I focus on building responsive, accessible, and efficient interfaces
+        that work across different devices. My projects involve handling UI
+        state, optimizing performance, and ensuring smooth user interactions.
+        While I haven't worked in a professional setting yet, I have built
+        complete applications that demonstrate my ability to develop, debug, and
+        refine front-end solutions independently.
+      </p>
+
+      <p>
+        I am always exploring new tools and frameworks to improve my workflow
+        and stay up to date with modern development practices. My goal is to
+        gain real-world experience, contribute to meaningful projects, and grow
+        as a developer by working with experienced teams. I’m open to
+        opportunities where I can apply my skills and continue learning in a
+        professional environment.
+      </p>
+    </div>
+    <div id="tools" class="py-16 h-screen">
+        <h3 class="uppercase text-5xl text-center py-3  border-t border-b border-blue-400 rounded-md block">tools</h3>
+          <div class="main py-10">
+              <div class="cells">
+                  <!-- Row 1 -->
+                  <div class="cells-row">
+                      <div>
+                          <i class="fa-brands fa-github text-[55px] transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2"></i>
+                          <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-1/2 absolute md:text-xs font-medium">GitHub</p>
+                      </div>
+                      
+                      <div>
+                          <img src="./imgs/angular.ico" class="transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2" alt="">
+                          <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-[45%] absolute md:text-xs font-medium">Angular</p>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-git-alt text-[55px] transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2"></i>
+                        <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-1/2 absolute md:text-xs font-medium">Git Bash</p>
+                    </div>
+
+                  </div>
+  
+                  <!-- Row 2 -->
+                  <div class="cells-row">
+                      <div>
+                      <img src="./imgs/bootstrap-logo.ico" class="w-13 transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2" alt="">
+                      <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-[48%] absolute text-[13px]  md:text-[10px] md:me-1 font-medium">Bootstrap</p>
+                      </div>
+                      <div>
+                          <img src="./imgs/Tailwind_Logo.ico" class="w-13 transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2" alt="">
+                          <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-[48%]  md:text-xs md:me-1 absolute font-medium">Tailwind</p>
+                      </div>
+                      <div>
+                          <i class="fa-brands fa-css3-alt text-blue-500 text-[55px] transition-all duration-300 ease-in-out absolute  right-1/2 translate-x-1/2"></i>
+                          <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-1/2 absolute font-medium text-xl  md:text-sm">CSS3</p>
+                      </div>
+                      <div>
+                          <i class="fa-brands fa-html5 text-[#c64425] text-[55px] transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2"></i>
+                          <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-1/2 absolute font-medium md:text-sm">HTML5</p>
+                      </div>
+
+                  </div>
+  
+                  <!-- Row 3 -->
+                  <div class="cells-row ">
+                      <div>
+                          <img src="./imgs/typescript_icon.ico" class="w-13 md:w-9 transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2" alt="">
+                          <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-[48%] absolute font-medium text-[13px] md:text-[10px] ">Typescript</p>
+                      </div>
+                      <div>
+                        <i class="fa-brands fa-js text-yellow-500 text-[55px] transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2"></i>
+                        <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-1/2 absolute font-medium text-xl md:text-sm md:me-2">EC6</p>
+                    </div>
+                    <div>
+                      <img src="./imgs/gsap.ico" class="w-13 transition-all duration-300 ease-in-out absolute right-1/2 translate-x-1/2" alt="">
+                      <p class="transition-all delay-[200ms,0] duration-[300ms,50ms] opacity-0 ease-in-out right-[48%] absolute font-medium text-xl md:text-sm">GSAP</p>
+                  </div>
+                  </div>
+              </div>
+          </div>
+    </div>
+  </div>
 </section>

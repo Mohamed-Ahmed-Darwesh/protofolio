@@ -32,3 +32,12 @@
 .navigate:hover::before , .navigate:focus::before { 
     width: 74px;
 }
+
+.cells-row div:hover i ,.cells-row div:hover img {
+    scale: 87%;
+    right: 25%;
+}
+
+.cells-row div:hover p{
+    opacity: 100%;
+}

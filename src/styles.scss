@@ -1,4 +1,44 @@
-@import "tailwindcss";
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+.main {
+  display: flex;
+  justify-content: center;
+  --s: 128px;  /* Hexagon size */
+  --m: 12px;     /* Gap size */
+}
+
+.cells {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /* Vertical spacing */
+}
+
+.cells-row {
+  
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.cells-row:nth-child(odd) {
+  left: calc(var(--s) * 0.51 + var(--m) * 0.55);
+}
+
+.cells-row div {
+  width: var(--s);
+  height: calc(var(--s) * 1.1547);
+  background: #0f172a9f;
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
 
 
 .toast-progress {
@@ -15,7 +55,7 @@
 body {
     margin: 0;
     color: #fff;
-    background-color: rgb(0, 2, 29);
+    background-color: rgb(14,22,42);
     padding: 0; 
   }
 
@@ -148,3 +188,13 @@ body {
 ::-webkit-scrollbar-track {
     background: #222222a9;
 }
+
+
+
+
+@media (max-width: 1024px) {
+  .main {
+    --s: 110px;
+  }
+}
+
