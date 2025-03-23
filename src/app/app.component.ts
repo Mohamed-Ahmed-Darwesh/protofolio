@@ -12,9 +12,11 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent{
+export class AppComponent implements AfterViewInit{
   private readonly ToastrService = inject(ToastrService)
-
+  ngAfterViewInit(): void {
+    gsap.registerPlugin(ScrollTrigger)
+  }
 
   title = 'Protofolio';
 }

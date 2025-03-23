@@ -41,3 +41,56 @@
 .cells-row div:hover p{
     opacity: 100%;
 }
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 100%;
+    background: #e5e7eb;
+    z-index: -1;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.main-his-box:nth-child(even) {
+
+    left: 50vw;
+}
+.main-his-box:nth-child(odd) {
+    right: 50vw;
+
+}
+
+.main-his-box{
+    position: relative;
+    opacity: 0;
+    background-position: center;
+    background-size: cover;
+    border-image-source: linear-gradient(45deg, rgb(0, 238, 255), rgb(174, 0, 255)) ;
+    border-image-slice: 1;
+    animation: borderAnimation 12s infinite linear;
+    -webkit-animation: borderAnimation 12s infinite linear;
+}
+.main-his-box:nth-child(2){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/ecommerce.png);
+}
+.main-his-box:nth-child(1){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/protofolio.png);
+}
+
+@keyframes borderAnimation {
+    0% {
+      border-image-source: linear-gradient(0deg, rgb(0, 238, 255), rgb(174, 0, 255));
+    }
+    50% {
+      border-image-source: linear-gradient(180deg, rgb(0, 238, 255), rgb(174, 0, 255));
+    }
+    100% {
+      border-image-source: linear-gradient(360deg, rgb(0, 238, 255), rgb(174, 0, 255));
+    }
+  }

@@ -6,7 +6,7 @@
 .main {
   display: flex;
   justify-content: center;
-  --s: 128px;  /* Hexagon size */
+  --s: 120px;  /* Hexagon size */
   --m: 12px;     /* Gap size */
 }
 
@@ -53,6 +53,7 @@
     -o-border-radius:12px ;
 }
 body {
+    overflow-x: hidden;
     margin: 0;
     color: #fff;
     background-color: rgb(14,22,42);
@@ -191,10 +192,14 @@ body {
 
 
 
-
 @media (max-width: 1024px) {
   .main {
     --s: 110px;
   }
 }
 
+@media (min-width: 1536px) {
+  .main {
+    --s: 163px;
+  }
+}
