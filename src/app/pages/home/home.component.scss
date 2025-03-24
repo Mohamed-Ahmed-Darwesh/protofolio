@@ -5,7 +5,7 @@
     top: 50%;
     transform: translateY(-50%);
     content: "";
-    height: 2px;
+    height: 1px;
     width: 38px;
     background-color: white;
     -webkit-transform: translateY(-50%);
@@ -30,7 +30,7 @@
     opacity: 100%;
 }
 .navigate:hover::before , .navigate:focus::before { 
-    width: 74px;
+    width: 68px;
 }
 
 .cells-row div:hover i ,.cells-row div:hover img {
@@ -48,7 +48,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: 3px;
-    height: 100%;
+    height: 90%;
     background: #e5e7eb;
     z-index: -1;
     -webkit-transform: translateX(-50%);
@@ -58,12 +58,10 @@
 }
 
 .main-his-box:nth-child(even) {
-
     left: 50vw;
 }
 .main-his-box:nth-child(odd) {
     right: 50vw;
-
 }
 
 .main-his-box{
@@ -71,26 +69,40 @@
     opacity: 0;
     background-position: center;
     background-size: cover;
-    border-image-source: linear-gradient(45deg, rgb(0, 238, 255), rgb(174, 0, 255)) ;
+    border-image-source: linear-gradient(45deg, rgba(0, 238, 255, 0.7), rgba(174, 0, 255, 0.7)) ;
     border-image-slice: 1;
     animation: borderAnimation 12s infinite linear;
     -webkit-animation: borderAnimation 12s infinite linear;
 }
-.main-his-box:nth-child(2){
+.box2{
     background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/ecommerce.png);
 }
-.main-his-box:nth-child(1){
+.box1{
     background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/protofolio.png);
 }
-
+.box3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/gameapi.png);
+}
+.box4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/weather.png);
+}
+.box5{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/login.png);
+}
+.box6{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/devfolio.png);
+}
+.box7{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342) , rgba(0, 0, 0, 0.555)), url(/imgs/daniels.png);
+}
 @keyframes borderAnimation {
     0% {
-      border-image-source: linear-gradient(0deg, rgb(0, 238, 255), rgb(174, 0, 255));
+      border-image-source: linear-gradient(0deg, rgba(0, 238, 255, 0.7), rgba(174, 0, 255, 0.7));
     }
     50% {
-      border-image-source: linear-gradient(180deg, rgb(0, 238, 255), rgb(174, 0, 255));
+      border-image-source: linear-gradient(180deg, rgba(0, 238, 255, 0.7), rgba(174, 0, 255, 0.7));
     }
     100% {
-      border-image-source: linear-gradient(360deg, rgb(0, 238, 255), rgb(174, 0, 255));
+      border-image-source: linear-gradient(360deg, rgba(0, 238, 255, 0.7), rgba(174, 0, 255, 0.7));
     }
   }

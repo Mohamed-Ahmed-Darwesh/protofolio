@@ -6,14 +6,13 @@
 .main {
   display: flex;
   justify-content: center;
-  --s: 120px;  /* Hexagon size */
-  --m: 12px;     /* Gap size */
+  --s: 90px;   
+  --m: 12px;     
 }
 
 .cells {
-  display: flex;
   flex-direction: column;
-  gap: 0; /* Vertical spacing */
+  gap: 0; 
 }
 
 .cells-row {
@@ -192,14 +191,30 @@ body {
 
 
 
-@media (max-width: 1024px) {
+@media (min-width: 640px) {
   .main {
-    --s: 110px;
+    --s: 120px;
   }
 }
-
+@media (min-width: 768px) {
+  .main {
+    --s: 90px;
+  }
+}
+@media (min-width: 1024px) {
+  .main {
+    --s: 130px;
+  }
+}
+@media (min-width: 1280px) {
+  .main {
+    --s: 130px;
+  }
+}
 @media (min-width: 1536px) {
   .main {
     --s: 163px;
   }
 }
+
+
