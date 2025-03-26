@@ -23,7 +23,7 @@ export class HomeComponent implements AfterViewInit {
     if(isPlatformBrowser(this.pLATFORM_ID)){
         gsap.to(".box1" , {
         x: '50vw',
-        duration:1,
+        duration:0.5,
         opacity:1,
         scrollTrigger:{
           trigger:".box1",
@@ -32,7 +32,7 @@ export class HomeComponent implements AfterViewInit {
     })
     gsap.to(".box3" , {
       x: '50vw',
-      duration:1,
+      duration:0.5,
       opacity:1,
       scrollTrigger:{
         trigger:".box3",
@@ -41,7 +41,7 @@ export class HomeComponent implements AfterViewInit {
   })
   gsap.to(".box5" , {
     x: '50vw',
-    duration:1,
+    duration:0.5,
     opacity:1,
     scrollTrigger:{
       trigger:".box5",
@@ -50,7 +50,7 @@ export class HomeComponent implements AfterViewInit {
 })
 gsap.to(".box7" , {
   x: '50vw',
-  duration:1,
+  duration:0.5,
   opacity:1,
   scrollTrigger:{
     trigger:".box7",
@@ -59,7 +59,7 @@ gsap.to(".box7" , {
 })
     gsap.to(".box2" , {
       x: '-50vw',
-      duration:1,
+      duration:0.5,
       opacity:1,
       scrollTrigger:{
         trigger:".box2",
@@ -68,7 +68,7 @@ gsap.to(".box7" , {
   })
   gsap.to(".box4" , {
     x: '-50vw',
-    duration:1,
+    duration:0.5,
     opacity:1,
     scrollTrigger:{
       trigger:".box4",
@@ -77,7 +77,7 @@ gsap.to(".box7" , {
 })
 gsap.to(".box6" , {
   x: '-50vw',
-  duration:1,
+  duration:0.5,
   opacity:1,
   scrollTrigger:{
     trigger:".box6",
@@ -90,7 +90,7 @@ gsap.to(".box6" , {
     ScrollTrigger.getAll().forEach(st => st.kill());
   }
   copyEmail():void{
-    navigator.clipboard.writeText("modyman989@gmail.com")
+    navigator.clipboard.writeText("mohamed.ahmed.darweesh@gmail.com")
     this.toastrService.success("Email is copied to your clipboard")
 
   }
